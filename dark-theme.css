@@ -1,0 +1,146 @@
+:root {
+	--black-color: #0c0c0c;
+	--white-color: #ffffff;
+	--red-color: #ff1111;
+}
+
+body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: var(--black-color);
+}
+
+.clock-analog {
+	width: 200px;
+	height: 200px;
+	border: 2px solid var(--white-color);
+	border-radius: 50%;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock-analog .hours,
+.clock-analog .minutes,
+.clock-analog .seconds {
+	background: var(--white-color);
+	color: var(--black-color);
+	transform-origin: bottom center;
+}
+
+.clock-analog .dot {
+	width: 10px;
+	height: 10px;
+	background: var(--white-color);
+	border-radius: 50%;
+	position: absolute;
+	left: calc(50% - 5px);
+	bottom: calc(50% - 5px);
+}
+
+.clock-digital {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	color: var(--white-color);
+}
+
+.btn {
+	color: var(--black-color);
+	background-color: var(--white-color);
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+.calendar {
+	font-size: 16px;
+	text-align: center;
+	margin-top: 10px;
+	color: var(--white-color);
+}
+.clock-analog .hours {
+	width: 4px;
+	height: 60px;
+
+	transform-origin: 50% 100%;
+}
+
+.clock-analog .minutes {
+	width: 3px;
+	height: 90px;
+
+	transform-origin: 50% 100%;
+}
+
+.clock-analog .seconds {
+	width: 2px;
+	height: 100px;
+
+	transform-origin: 50% 100%;
+	background-color: var(--red-color);
+	color: var(--red-color);
+}
+.light-dark {
+	text-align: center;
+	margin-top: 10px;
+}
+.day,
+.month,
+.date {
+	margin: 2px;
+}
+
+.clock-analog .hours {
+	width: 4px;
+	height: 60px;
+	left: calc(50% - 2px);
+	bottom: calc(50% - 60px);
+	transform-origin: 50% 200%; /* Added this line to rotate from the bottom center */
+	position: absolute;
+	top: -10%;
+	left: 77%;
+}
+
+.clock-analog .minutes {
+	width: 3px;
+	height: 90px;
+	left: calc(50% - 1.5px);
+	bottom: calc(50% - 90px);
+	position: absolute;
+	top: 5%;
+	transform-origin: 50% 100%; /* Added this line to rotate from the bottom center */
+}
+
+.clock-analog .seconds {
+	width: 2px;
+	height: 100px;
+	left: calc(50% - 1px);
+	bottom: calc(50% - 100px);
+	transform-origin: 50% 100%; /* Added this line to rotate from the bottom center */
+	background-color: var(--red-color);
+	background-color: var(--red-color);
+	position: absolute;
+	top: 0%;
+}
+.clock-analog .hours {
+	width: 4px;
+	height: 60px;
+	left: calc(49% - 2px); /* Changed from 50% to 49% */
+	bottom: calc(51% - 60px); /* Changed from 49% to 51% */
+
+	transform-origin: 50% 100%;
+	/* Added this line to rotate from the bottom center */
+}
+.clock-analog .hours {
+	margin-top: 60px; /* Added this line to adjust the position of the hours hand */
+}
